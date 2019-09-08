@@ -1,0 +1,4 @@
+ic
+resistor
+cap
+diode
