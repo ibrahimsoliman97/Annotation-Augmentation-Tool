@@ -1,5 +1,5 @@
 # Annotation-Augmentation-Tool
-Graphical image annotation and augmentation tool for object detection dataset
+Graphical image annotation and augmentation tool for object detection dataset.  
 
 ![Alt text](/res/trial.png?raw=true "Optional Title")
 
@@ -81,7 +81,7 @@ This tool is written in python 2.7 based on OpenCV, PyQt4 and numpy libraries. T
 
 
 # Acknowledgement
-The author would like to thank the developers of Intel Movidius NCS, YOLONCS and gst-rpicamsrc.
+The author would like to thank the developers of opencv and PyQt4.
 
 
 
@@ -89,7 +89,7 @@ The author would like to thank the developers of Intel Movidius NCS, YOLONCS and
 
 <tr>
 <td align="left" valign="left">
-The equipment used in this work is provided by Machine Learning and Signal Processing Research Lab, Faculty of Electronic and Computer Engineering, Universiti Teknikal Malaysia Melaka (UTeM).
+The equipment used in this work is provided by Machine Learning and Signal Processing Research Lab, Faculty of Electronic and Computer Engineering, Universiti Technical Malaysia Melaka (UTeM) .
 </td>
 <td align="right" valign="right">
 <img src="https://www.utem.edu.my/image/newlogo/LogoJawi.png" alt="description here" />
