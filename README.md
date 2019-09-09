@@ -79,6 +79,7 @@ This tool is written in python 2.7 based on OpenCV, PyQt4 and numpy libraries. T
 
 </table>
 
+Delete an existing bounding box by right click on it.
 
 # Acknowledgement
 The author would like to thank the developers of opencv and PyQt4.
