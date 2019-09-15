@@ -16,7 +16,7 @@ This tool is written in python 2.7 based on OpenCV, PyQt4 and numpy libraries. T
       
   3- install requirments
   
-      pip install -r requirements.txt
+      pip install -r requirements.txt ; sudo apt-get install -y python-qt4
       
   4- run the tool
   
