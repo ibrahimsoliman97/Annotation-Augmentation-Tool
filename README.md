@@ -3,14 +3,6 @@ Graphical image annotation and augmentation tool for object detection dataset.
 
 ![Alt text](/res/trial.png?raw=true "Optional Title")
 
-<table>
-<tr>
-<td align="center">
-<img src="/res/openFolder.png" alt="" /></td>
-<td align="center"><p>Orignal Image</p></td>
-</tr>
-</table>
-
 # Requirments & Installation
 This tool is written in python 2.7 based on OpenCV, PyQt4 and numpy libraries. Tested successfully on ubuntu 16.04 and 18.04.
     
@@ -88,6 +80,34 @@ This tool is written in python 2.7 based on OpenCV, PyQt4 and numpy libraries. T
 </table>
 
 Delete an existing bounding box by right click on it.
+
+# Augmentation sample
+<table align="center">
+<tr>
+    <td align="center"><p>Orignal Image</p></td>
+    <td align="center"><p>Rotated by 90</p></td>
+    <td align="center"><p>Rotated by 180</p></td>
+    <td align="center"><p>Rotated by 270</p></td>
+</tr>
+<tr>
+    <td align="center"><img src="/res/brainTumor/BrainTumor.jpg" alt="" /></td>
+    <td align="center"><img src="/res/brainTumor/BrainTumor_r90.jpg" alt="" /></td>
+    <td align="center"><img src="/res/brainTumor/BrainTumor_r180.jpg" alt="" /></td>
+    <td align="center"><img src="/res/brainTumor/BrainTumor_r270.jpg" alt="" /></td>        
+</tr>
+<tr>
+    <td align="center"><p>Flipped Image</p></td>
+    <td align="center"><p>Noise Filter</p></td>
+    <td align="center"><p>Brightness level 1</p></td>
+    <td align="center"><p>Brightness level 2</p></td>
+</tr>
+<tr>
+    <td align="center"><img src="/res/brainTumor/BrainTumorf.jpg" alt="" /></td>
+    <td align="center"><img src="/res/brainTumor/BrainTumor_n1.jpg" alt="" /></td>
+    <td align="center"><img src="/res/brainTumor/BrainTumor_b1.jpg" alt="" /></td>
+    <td align="center"><img src="/res/brainTumor/BrainTumor_b2.jpg" alt="" /></td>        
+</tr>   
+</table>
 
 # Acknowledgement
 The author would like to thank the developers of opencv and PyQt4.
