@@ -5,15 +5,11 @@ Graphical image annotation and augmentation tool for object detection dataset.
 
 <table>
 <tr>
-<td align="left" valign="left">
-<img src="/res/openFolder.png" alt="Provides a dialog that allow users to select image or directories
-  contacting our dataset images for starting of annotation process." />
-</td>
-<td align="left" valign="right">
-<p>Provides a dialog that allow users to select image or directories
-  contacting our dataset images for starting of annotation process.</p>
-</td>
+<td align="center">
+<img src="/res/openFolder.png" alt="" /></td>
+<td align="center"><p>Orignal Image</p></td>
 </tr>
+</table>
 
 # Requirments & Installation
 This tool is written in python 2.7 based on OpenCV, PyQt4 and numpy libraries. Tested successfully on ubuntu 16.04 and 18.04.
