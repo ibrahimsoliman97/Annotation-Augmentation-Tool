@@ -62,7 +62,13 @@ This tool is written in python 2.7 based on OpenCV, PyQt4 and numpy libraries. T
 <tr>
     <td align="left" valign="left">
         <img src="/res/rot.png"/></td>
-    <td align="left" valign="right"><p>Preform a rotation augmentation by rotating the image and its annotation by the following degrees (90, 180, 270) and save it in same directory.</p></td>
+    <td align="left" valign="right"><p>Perform a rotation augmentation by rotating the image and its annotation by the following degrees (90, 180, 270) and save it in same directory.</p></td>
+</tr>
+
+<tr>
+    <td align="left" valign="left">
+        <img src="/res/flipB.png"/></td>
+    <td align="left" valign="right"><p>Perform a vertical flipping to the original image.</p></td>
 </tr>
 
 <tr>
