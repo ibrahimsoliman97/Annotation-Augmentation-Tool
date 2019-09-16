@@ -338,37 +338,37 @@ class Window(QtGui.QWidget):
 
     def rotate3Image(self):
         rotated1 = cv2.rotate(self.image, cv2.ROTATE_90_CLOCKWISE)
-        write_annotation_file_90(self.annot, (os.path.splitext(self.annot_path)[0]+'r90.txt'),self.image.shape[0],self.image.shape[1])
-        cv2.imwrite((os.path.splitext(self.annot_path)[0]+'r90'+self.image_extension),rotated1)
+        write_annotation_file_90(self.annot, (os.path.splitext(self.annot_path)[0]+'_r90.txt'),self.image.shape[0],self.image.shape[1])
+        cv2.imwrite((os.path.splitext(self.annot_path)[0]+'_r90'+self.image_extension),rotated1)
         rotated2 = cv2.rotate(self.image, cv2.ROTATE_180)
-        write_annotation_file_180(self.annot, (os.path.splitext(self.annot_path)[0]+'r180.txt'),self.image.shape[0],self.image.shape[1])
-        cv2.imwrite((os.path.splitext(self.annot_path)[0]+'r180'+self.image_extension),rotated2)
+        write_annotation_file_180(self.annot, (os.path.splitext(self.annot_path)[0]+'_r180.txt'),self.image.shape[0],self.image.shape[1])
+        cv2.imwrite((os.path.splitext(self.annot_path)[0]+'_r180'+self.image_extension),rotated2)
         rotated3 = cv2.rotate(self.image, cv2.ROTATE_90_COUNTERCLOCKWISE)
-        write_annotation_file_270(self.annot, (os.path.splitext(self.annot_path)[0]+'r270.txt'),self.image.shape[0],self.image.shape[1])
-        cv2.imwrite((os.path.splitext(self.annot_path)[0]+'r270'+self.image_extension),rotated3)
+        write_annotation_file_270(self.annot, (os.path.splitext(self.annot_path)[0]+'_r270.txt'),self.image.shape[0],self.image.shape[1])
+        cv2.imwrite((os.path.splitext(self.annot_path)[0]+'_r270'+self.image_extension),rotated3)
 
     def addnoiseImage(self):
         img = self.image.copy()
         noiseImage = cv2.randn(img,(0,0,0),(5,5,5))
-        write_annotation_file(self.annot, (os.path.splitext(self.annot_path)[0]+'n1.txt'),self.image.shape[0],self.image.shape[1])
-        cv2.imwrite((os.path.splitext(self.annot_path)[0]+'n1'+self.image_extension),(self.image+noiseImage))
+        write_annotation_file(self.annot, (os.path.splitext(self.annot_path)[0]+'_n1.txt'),self.image.shape[0],self.image.shape[1])
+        cv2.imwrite((os.path.splitext(self.annot_path)[0]+'_n1'+self.image_extension),(self.image+noiseImage))
         img2 = self.image.copy()
         noiseImage2 = cv2.randn(img2,(0,0,0),(10,10,10))
-        write_annotation_file(self.annot, (os.path.splitext(self.annot_path)[0]+'n2.txt'),self.image.shape[0],self.image.shape[1])
-        cv2.imwrite((os.path.splitext(self.annot_path)[0]+'n2'+self.image_extension),(self.image+noiseImage2))
+        write_annotation_file(self.annot, (os.path.splitext(self.annot_path)[0]+'_n2.txt'),self.image.shape[0],self.image.shape[1])
+        cv2.imwrite((os.path.splitext(self.annot_path)[0]+'_n2'+self.image_extension),(self.image+noiseImage2))
 
     def addBrightImage(self):
         frameBright1 = increase_brightness(self.image, value=10)
-        write_annotation_file(self.annot, (os.path.splitext(self.annot_path)[0]+'b1.txt'),self.image.shape[0],self.image.shape[1])
-        cv2.imwrite((os.path.splitext(self.annot_path)[0]+'b1'+self.image_extension),(frameBright1))
+        write_annotation_file(self.annot, (os.path.splitext(self.annot_path)[0]+'_b1.txt'),self.image.shape[0],self.image.shape[1])
+        cv2.imwrite((os.path.splitext(self.annot_path)[0]+'_b1'+self.image_extension),(frameBright1))
         frameBright2 = increase_brightness(self.image, value=20)
-        write_annotation_file(self.annot, (os.path.splitext(self.annot_path)[0]+'b2.txt'),self.image.shape[0],self.image.shape[1])
-        cv2.imwrite((os.path.splitext(self.annot_path)[0]+'b2'+self.image_extension),(frameBright2))
+        write_annotation_file(self.annot, (os.path.splitext(self.annot_path)[0]+'_b2.txt'),self.image.shape[0],self.image.shape[1])
+        cv2.imwrite((os.path.splitext(self.annot_path)[0]+'_b2'+self.image_extension),(frameBright2))
 
     def flippingImage(self):
         horizontal_img = cv2.flip( self.image, 1)
-        write_annotation_file_flip(self.annot, (os.path.splitext(self.annot_path)[0]+'f.txt'),self.image.shape[0],self.image.shape[1])
-        cv2.imwrite((os.path.splitext(self.annot_path)[0]+'f'+self.image_extension),(horizontal_img))
+        write_annotation_file_flip(self.annot, (os.path.splitext(self.annot_path)[0]+'_f.txt'),self.image.shape[0],self.image.shape[1])
+        cv2.imwrite((os.path.splitext(self.annot_path)[0]+'_f'+self.image_extension),(horizontal_img))
 
     def closeEvent(self, event):
         reply = QtGui.QMessageBox.question(self, 'Save?', 'Save changes to file?', QtGui.QMessageBox.Yes | QtGui.QMessageBox.No, QtGui.QMessageBox.No)
