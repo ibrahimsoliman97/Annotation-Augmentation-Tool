@@ -116,9 +116,7 @@ Delete an existing bounding box by right click on it.
 </table>
 
 # Acknowledgement
-The author would like to thank the developers of opencv and PyQt4.
-
-
+The author would like to thank the developers of opencv and PyQt4. As well as i would like to acknowledge and express my utmost gratitude to my supervisor Professor Dr. Zulkalnain Bin Mohd Yussof from Faculty of Electronics and Computer Engineering, Universiti Teknikal Malaysia Melaka (UTeM)
 
 <table>
 
